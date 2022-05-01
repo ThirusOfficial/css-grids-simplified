@@ -15,6 +15,9 @@
          body {
             background-color: #212332;
             min-height: 100vh;
+
+            display: grid;
+            grid-template-columns: 14rem 1fr;
          }
          section {
             padding: 1.5rem;
@@ -22,8 +25,17 @@
          section.left {
             background-color: #2a2d3e;
          }
+         nav {
+            position: fixed;
+            inset: 0;
+            padding: 1.5rem;
+         }
          .container {
             margin-top: 1.2rem;
+
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 1.5rem;
          }
          .block {
             background-color: #2a2d3e;
@@ -32,18 +44,34 @@
          }
          .block1 {
             height: 9rem;
+
+            /* As a grid item */
+            grid-column: span 2;
+
+            /* As a grid container */
+            display: grid;
+            grid-template-columns: auto auto;
+            place-content: space-between;
          }
          .block2 {
             height: 16rem;
+
+            grid-column: span 5;
          }
          .block3 {
             height: 16rem;
+
+            grid-column: span 3;
          }
          .block4 {
             height: 12rem;
+
+            grid-column: span 5;
          }
          .block5 {
             height: 12rem;
+
+            grid-column: span 3;
          }
          h3 {
             font-weight: bold;
@@ -55,6 +83,11 @@
          span {
             font-size: 0.8rem;
             color: #24cb24;
+
+            align-self: end;
+         }
+         .fa-ellipsis {
+            justify-self: end;
          }
       </style>
    </head>

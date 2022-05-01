@@ -8,24 +8,14 @@
          section {
             max-width: 54rem;
             margin: 4rem auto 0;
-            padding: 1.2rem;
+            padding: 2.4rem;
             background-color: #32343c;
             color: white;
 
             display: grid;
-         }
-         @media screen and (min-width: 480px) {
-            section {
-               grid-template-columns: 50% 50%;
-            }
-         }
-         @media screen and (min-width: 720px) {
-            section {
-               grid-template-columns: 33.33% 33.33% 33.33%;
-            }
-         }
-         section > div {
-            padding: 1.2rem;
+            gap: 2.4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
          }
          section > div > h2 {
             color: #03dac6;

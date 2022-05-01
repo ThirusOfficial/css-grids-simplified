@@ -19,11 +19,22 @@
             border-radius: 0.5rem;
             padding: 1.2rem;
             margin: 12rem auto;
+
+            display: grid;
+            grid-template-columns: auto auto;
+            /* justify-content: space-between;
+            align-content: space-between; */
+            place-content: space-between;
+         }
+         h3 {
+            align-self: center;
          }
          img {
             width: 2.6rem;
             height: 2.6rem;
             border-radius: 1.3rem;
+
+            justify-self: end;
          }
          a {
             color: white;
@@ -33,6 +44,9 @@
             font-size: 1.6rem;
             padding-left: 0.3rem;
             line-height: 1;
+         }
+         small {
+            align-self: end;
          }
       </style>
    </head>

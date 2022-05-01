@@ -10,6 +10,9 @@
             margin: 2rem auto;
             padding: 2rem;
             background-color: #24243e;
+
+            display: grid;
+            gap: 1.5rem;
          }
          button {
             display: inline-block;
@@ -21,6 +24,19 @@
             font-weight: 600;
             font-size: 0.8rem;
             cursor: pointer;
+         }
+         @media screen and (min-width: 540px) {
+            form {
+               grid-template-columns: 1fr 1fr;
+            }
+            #message-block {
+               grid-column: 2;
+               grid-row: 1 / span 2;
+            }
+            button {
+               grid-column-start: 1;
+               grid-column-end: -1;
+            }
          }
       </style>
    </head>

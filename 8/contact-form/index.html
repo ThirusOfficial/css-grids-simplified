@@ -13,6 +13,11 @@
 
             display: grid;
             gap: 1.5rem;
+            grid-template-areas:
+               "name"
+               "email"
+               "message"
+               "button";
          }
          button {
             display: inline-block;
@@ -24,8 +29,26 @@
             font-weight: 600;
             font-size: 0.8rem;
             cursor: pointer;
+
+            grid-area: button;
+         }
+         #name-block {
+            grid-area: name;
+         }
+         #email-block {
+            grid-area: email;
+         }
+         #message-block {
+            grid-area: message;
          }
          @media screen and (min-width: 540px) {
+            form {
+               grid-template-columns: 1fr 1fr;
+               grid-template-areas:
+                  "name message"
+                  "email message"
+                  "button button";
+            }
          }
       </style>
    </head>

@@ -8,6 +8,16 @@
          section {
             margin: 4rem auto;
             padding: 2rem;
+
+            display: grid;
+            grid-template-columns: minmax(9rem, 16rem);
+            gap: 2rem;
+            justify-content: center;
+         }
+         @media screen and (min-width: 620px) {
+            section {
+               grid-template-columns: repeat(3, minmax(9rem, 16rem));
+            }
          }
          span {
             font-size: 0.8rem;

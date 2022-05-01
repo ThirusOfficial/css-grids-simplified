@@ -11,6 +11,22 @@
             padding: 2rem;
             background-color: #32343c;
             color: white;
+
+            display: grid;
+            /* Only fr units */
+            grid-template-columns: 1fr 2fr;
+
+            /* Width in px or % with 'fr' units */
+            grid-template-columns: 1fr 1fr 50%;
+
+            /* Only 'auto' values */
+            grid-template-columns: auto auto;
+
+            /* Width in px or % with 'auto' values */
+            grid-template-columns: auto 100px;
+
+            /* The 'fr' unit with 'auto' values */
+            grid-template-columns: 1fr auto;
          }
          .icon {
             font-size: 3rem;

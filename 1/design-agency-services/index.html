@@ -11,6 +11,19 @@
             padding: 1.2rem;
             background-color: #32343c;
             color: white;
+
+            display: grid;
+            /* grid-template-columns: 20rem 25rem; */
+         }
+         @media screen and (min-width: 480px) {
+            section {
+               grid-template-columns: 50% 50%;
+            }
+         }
+         @media screen and (min-width: 720px) {
+            section {
+               grid-template-columns: 33.33% 33.33% 33.33%;
+            }
          }
          section > div {
             padding: 1.2rem;
